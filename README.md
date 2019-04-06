@@ -1,3 +1,3 @@
 # POJ
 Repozytorium na studia
-Kacper Wieczorek
+Kacper Wieczorek 18426
