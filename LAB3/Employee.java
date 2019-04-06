@@ -18,7 +18,7 @@ public class Employee {
 
     }
     public int getID (){
-    return id;
+        return id;
     }
     public String getfirstName(){
         return firstName;
@@ -39,7 +39,7 @@ public class Employee {
         return salary *12;
     }
     public int raisesalary(int procent){
-       return this.salary = salary * procent;
+        return this.salary = salary * procent;
     }
     public String toString(){
         return "Employee[id="+id+", name="+firstName+lastName+", salary="+salary+"]";
