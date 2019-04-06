@@ -1,38 +1,23 @@
 /*
- Aleksander Tyński
- Kacper Wieczorek
- Zadanie 7 lab 3
- czy jest to palindrom?
- */
+Aleksander Tyński
+Kacper Wieczorek
+Zadanie 7 lab3
+Palindrom
+*/
+public class Palindrom {
 
- class Main {  // jakos działa bez public
+    public static boolean palindrom(String lancuch) {
 
-    public static void main(String[] args) {
-        String pal = "kajak";
-        int startPos=0;
-        int endPos = pal.length() -1;
+        StringBuilder tekst = new StringBuilder(lancuch);
 
-        boolean isPal = true;
-        while (startPos < endPos)
-        {
-            String startLetter = pal.substring(startPos, startPos+1);
-            String endLetter = pal.substring(endPos, endPos+1);
+        return lancuch.equals(tekst.reverse().toString());
 
-            if(startLetter.equals(endLetter)==false)
-            {
-                isPal=false;
-                break;
-            }
-            startPos++;
-            endPos--;
-        }
-        if (isPal==true)
-        {
-            System.out.println(pal + " jest palnidromem");
-        }
-        else
-        {
-            System.out.println(pal + " nie jest palindronem");
-        }
+    }
+
+    public static void main(String[] args){
+
+        String lancuch = "atak kata";//muzo raz daj jad za rozum//wódy żal dla żydów;
+
+        System.out.println("Łańcuch tekstowy: " + lancuch + (palindrom(lancuch) ? " jest" : " nie jest") + " palindromem");
     }
 }
