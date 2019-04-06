@@ -3,7 +3,7 @@ public class Main {
         Employee Kacper = new Employee(1, "Kacper", "Wieczorek", 5000);
         InvoiceItem Aleksander = new InvoiceItem(1, "opis", 5000, 2);
         Date Kiedys = new Date(28, 8, 1997);
-        Account Konto = new Account("1", "Konto osobiste", 5000);
+        Account My = new Account(1,"Aleksander",1);
         Time Zegarek = new Time(5, 23, 45);
         System.out.println(Kacper);
         System.out.println(Aleksander);
