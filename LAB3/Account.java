@@ -40,10 +40,10 @@ public class Account {
             System.out.println("Przekroczona kwota");
         return balance;
     }
-    public int transferTo (int account  , int amount)
+    public int transferTo (Account another  , int amount)
     {
         if (amount <= balance)
-            balance=account;
+            this.balance= balance + another.amount;
         else
             System.out.println("Przekoroczona kwota");
         return balance;
