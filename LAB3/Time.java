@@ -40,7 +40,17 @@ public class Time {
     }
 
     public String toString(){
-        return "Time["+hour+":"+minute+":"+second+"]";
+
+     String godz = Integer.toString(hour);
+     String minu = Integer.toString(minute);
+     String seku = Integer.toString(second);
+
+        while (godz.length() < 2) godz = "0" + godz;
+        while (minu.length() < 2) minu = "0" + minu;
+        while (seku.length() < 2) seku = "0" + seku;
+
+     return "Time["+godz+":"+minu+":"+seku+"]";
+
     }
     public Time nextSecond (){
         if(second==59)
@@ -54,10 +64,10 @@ public class Time {
                     second=0;
                 }
                 else
-                hour+=1;
+                    hour+=1;
             }
             else
-            minute+=1;
+                minute+=1;
             second=0;
         }
         else
