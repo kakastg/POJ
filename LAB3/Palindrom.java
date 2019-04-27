@@ -18,6 +18,7 @@ public class Palindrom {
     public String sprawdz(){
         String a = palindrom.toLowerCase();
         a=a.replace(" ","");
+        a=a.replace(",","");
         int h = a.length();
 
         int kk = 0;
