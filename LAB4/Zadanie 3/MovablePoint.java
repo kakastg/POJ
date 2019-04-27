@@ -1,8 +1,8 @@
 /*
     Klaudia Klebba
     Kacper Wieczorek
-    Zadanie 1 lab4
-    Tworzenie klasy Person/Student/Staff
+    Zadanie 3 lab4
+    Tworzenie klasy Point/MovablePoint
      */
 public class MovablePoint extends Point {
     private float xSpeed=0.0f;
