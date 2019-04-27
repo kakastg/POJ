@@ -1,3 +1,9 @@
+/*
+    Klaudia Klebba
+    Kacper Wieczorek
+    Zadanie 3 lab4
+    Tworzenie klasy Point/MovablePoint
+     */
 public class Point
 {
     private float x=0.0f;
