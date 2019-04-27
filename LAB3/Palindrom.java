@@ -2,22 +2,39 @@
 Aleksander Tyński
 Kacper Wieczorek
 Zadanie 7 lab3
-Palindrom
+Tworzenie klasy Palindrom
 */
 public class Palindrom {
+    private String palindrom;
 
-    public static boolean palindrom(String lancuch) {
-
-        StringBuilder tekst = new StringBuilder(lancuch);
-
-        return lancuch.equals(tekst.reverse().toString());
-
+    public Palindrom(String palindrom){
+        this.palindrom=palindrom;
     }
 
-    public static void main(String[] args){
+    public String getPalindrom() {
+        return palindrom;
+    }
 
-        String lancuch = "atak kata";//muzo raz daj jad za rozum//wódy żal dla żydów;
+    public String sprawdz(){
+        String a = palindrom.toLowerCase();
+        a=a.replace(" ","");
+        int h = a.length();
 
-        System.out.println("Łańcuch tekstowy: " + lancuch + (palindrom(lancuch) ? " jest" : " nie jest") + " palindromem");
+        int kk = 0;
+        int k = (h - 1);
+        for (int i = 0; i < h; i++) {
+
+            if (a.charAt(i) != a.charAt(k)) {
+                kk = 1;
+                break;
+            }
+            k--;
+        }
+
+        if (kk == 1)
+            return "- nie jest palindromem";
+        else {
+            return "- jest palindromem";
+        }
     }
 }
