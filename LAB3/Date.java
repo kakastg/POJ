@@ -40,6 +40,15 @@ public class Date {
     }
 
     public String toString(){
-        return "Date["+day+"/"+month+"/"+year+"]";
+
+        String dzien = Integer.toString(day);
+        String miesia = Integer.toString(month);
+        String rok = Integer.toString(year);
+
+        while (dzien.length() < 2) dzien = "0" + dzien;
+        while (miesia.length() < 2) miesia = "0" + miesia;
+        while (rok.length() < 4) rok = "0" + rok;
+
+        return "Date["+dzien+"/"+miesia+"/"+rok+"]";
     }
 }
