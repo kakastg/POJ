@@ -80,8 +80,14 @@ public class GradesStatistics {
             median = (double) grades[grades.length/2];
         double max=grades[numStudents-1];//wyżej posortowałem, więc wiem jaki jest max i min
         double min=grades[0];
-
-        System.out.printf("The average is: %1$.2f\n", (sum / numStudents));
+        System.out.printf("The grades are: ");
+        i=0;
+        while(i<=(numStudents-1))
+        {
+            System.out.printf(" ["+grades[i]+"] ");
+            i++;
+        }
+        System.out.printf("\nThe average is: %1$.2f\n", (sum / numStudents));
         System.out.printf("The median is: %1$.2f\n", median);
         System.out.printf("The minimum is: %1$.2f\n", min);
         System.out.printf("The maximum is: %1$.2f\n", max);
