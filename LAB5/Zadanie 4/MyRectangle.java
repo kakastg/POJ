@@ -1,3 +1,9 @@
+/*
+    Dorota Matkowska
+    Kacper Wieczorek
+    Zadanie 4 lab5
+    Klasa MyRectangle
+     */
 public class MyRectangle {
 
     private MyPoint p1;
