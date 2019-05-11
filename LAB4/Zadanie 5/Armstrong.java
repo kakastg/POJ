@@ -1,3 +1,9 @@
+/*
+    Klaudia Klebba
+    Kacper Wieczorek
+    Zadanie 6 lab4
+    Tworzenie licznika innych wyrazów;
+    */
 public class Armstrong {
 
     public static void main(String[] args) {
