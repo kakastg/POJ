@@ -31,6 +31,14 @@ public class Main {
         System.out.println(klient.toString());
         Invoice faktura = new Invoice(2,klient,321);
         System.out.println(faktura.getAmountAfterDiscount());
+        ChemicalElements element = new ChemicalElements("Żelazo","Fe",13);
+        System.out.println(element.toString());
+        element.isAlkali();
+        element.isTransition();
+        element.isMetal();
+
+
+
 
     }
 }
