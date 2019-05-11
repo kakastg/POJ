@@ -20,8 +20,11 @@ public class Main {
         }
 
         MyCircle kolo = new MyCircle(5,5,10);
+        MyCircle kolo1 = new MyCircle(10,3,23);
         System.out.println(kolo.toString());
-        System.out.println(kolo.distance(kolo));
+        System.out.println("Odległość między środkami okręgów "+kolo.distance(kolo1));
+        MyTriangle trojkat=new MyTriangle(1,3,1,3,4,5);
+        System.out.println(trojkat.getType());
 
-}
+    }
 }
