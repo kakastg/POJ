@@ -1,8 +1,8 @@
 /*
     Dorota Matkowska
     Kacper Wieczorek
-    Zadanie 1 lab5
-    Klasa MyPoint
+    Zadanie 2 lab5
+    Klasa MyCircle
      */
 public class MyCircle {
     private MyPoint center;
