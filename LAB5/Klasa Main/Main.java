@@ -25,6 +25,12 @@ public class Main {
         System.out.println("Odległość między środkami okręgów "+kolo.distance(kolo1));
         MyTriangle trojkat=new MyTriangle(1,3,1,3,4,5);
         System.out.println(trojkat.getType());
+        MyRectangle prostokat=new MyRectangle(5,2,10,1);
+        System.out.println(prostokat.getArea());
+        Customer klient = new Customer(2,"Kacper",15);
+        System.out.println(klient.toString());
+        Invoice faktura = new Invoice(2,klient,321);
+        System.out.println(faktura.getAmountAfterDiscount());
 
     }
 }
