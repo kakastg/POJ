@@ -21,7 +21,6 @@ public class PizzaApplication {
             pizzadel[i].name="Pizza Deluxe";
             pizzadel[i].price=rand.nextInt(50);
             pizzadel[i].calories=300+rand.nextInt(1000);
-            System.out.println(pizzadel[i].getPrice());
         }
 
         Pizza[] pizzaspec;
