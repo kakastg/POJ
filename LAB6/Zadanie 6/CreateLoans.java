@@ -7,11 +7,11 @@
 import java.util.*;
 import java.lang.Exception.*;
 
-class CreateLoan {
+class CreateLoans {
     private Loan[] loanDetails = new Loan[5];
 
     public static void main(String[] args) {
-        CreateLoan loan = new CreateLoan();
+        CreateLoans loan = new CreateLoans();
 
         loan.getLoanDetails();
         loan.displayDetails();
