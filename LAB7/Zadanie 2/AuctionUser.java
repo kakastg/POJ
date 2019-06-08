@@ -1,3 +1,9 @@
+/*
+    Aleksander Mojzych
+    Kacper Wieczorek
+    Zadanie 2 lab7
+    Implementacja Buildera z Aukcjami
+     */
 public class AuctionUser {
     private char type;
     private String firstName;
@@ -28,4 +34,8 @@ public class AuctionUser {
         return user;
     }
     private AuctionUser(){}
+
+    public String getName(){
+        return firstName+" "+lastName;
+    }
 }
